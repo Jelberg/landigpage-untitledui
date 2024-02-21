@@ -8,6 +8,7 @@ import ArrowSquareOutIcon from "./assets/icons/ArrowSquareOutIcon";
 import ChatBubbleIcon from "./assets/icons/ChatBubbleIcon";
 import StarIcon from "./assets/icons/StarIcon";
 import InputEmail from "./components/input/email/InputEmail";
+import ArrowIcons from "./ArrowIcon";
 
 export default function Home() {
   return (
@@ -28,6 +29,7 @@ export default function Home() {
       <a>Holaaa</a>
       <button>Holaaa</button>
       <InputEmail />
+      <ArrowIcons />
     </main>
   );
 }
