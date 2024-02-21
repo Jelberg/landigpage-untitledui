@@ -6,6 +6,7 @@ import MinusCircleIcon from "./assets/icons/MinusCircleIcon";
 import LightningIcon from "./assets/icons/LightningIcon";
 import ArrowSquareOutIcon from "./assets/icons/ArrowSquareOutIcon";
 import ChatBubbleIcon from "./assets/icons/ChatBubbleIcon";
+import StarIcon from "./assets/icons/StarIcon";
 
 export default function Home() {
   return (
@@ -22,6 +23,9 @@ export default function Home() {
       <ChatBubbleIcon />
       <LightningIcon />
       <ArrowSquareOutIcon /> 
+      <StarIcon />
+      <a>Holaaa</a>
+      <button>Holaaa</button>
     </main>
   );
 }

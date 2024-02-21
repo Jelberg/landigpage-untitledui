@@ -7,11 +7,11 @@ const config: Config = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    colors:{
-      "purple-ui": "#53389e",
-      "lightpurple-ui": "#7f56d9",
-    },
     extend: {
+      colors:{
+        "purple-ui": "#53389e",
+        "lightpurple-ui": "#7f56d9",
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
