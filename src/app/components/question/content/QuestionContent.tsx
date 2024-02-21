@@ -3,16 +3,21 @@
 import { ReactNode, useState } from "react"
 import PlusCircleIcon from "@/app/assets/icons/PlusCircleIcon"
 import MinusCircleIcon from "@/app/assets/icons/MinusCircleIcon"
+import { findRenderedDOMComponentWithClass } from "react-dom/test-utils"
 
 interface IQuestionContentent {
     quetion: string,
     summary: string,
+    iconColor?: string
+    displaySummary?: boolean
 }
 export default function QuestionContent({
     quetion,
     summary,
+    iconColor="gray",
+    displaySummary=false
 }: IQuestionContentent) {
-    const [display, setdisplay] = useState(false)
+    const [display, setdisplay] = useState(displaySummary)
     const handleDisplay = () => {
         setdisplay(!display)
     }
@@ -26,8 +31,8 @@ export default function QuestionContent({
             </div>
             <div className="grid grid-rows-1 min-w-5 place-content-end">
             {
-                display ? <MinusCircleIcon color="gray" /> : 
-                <PlusCircleIcon color="gray"/>
+                display ? <MinusCircleIcon color={iconColor} /> : 
+                <PlusCircleIcon color={iconColor}/>
             }
             </div>
     </div>
