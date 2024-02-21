@@ -4,5 +4,5 @@ export default function Link({
     text= "View Integration", 
     icon= <ArrowIcon />
 }) {
-    return <a className="flex flex-row items-center">{text} {icon}</a>
+    return <a className="flex flex-row items-center text-lightpurple-ui">{text} {icon}</a>
 }

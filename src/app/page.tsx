@@ -12,7 +12,8 @@ import Pill from "./components/pills/Pill";
 import Link from "./components/link/Link";
 import Avatar from "./components/avatar/Avatar";
 import IconWithText from "./components/inconWithText/IconWithText";
-import { sources } from "next/dist/compiled/webpack/webpack";
+import QuestionContent from "./components/question/content/QuestionContent";
+
 
 export default function Home() {
   return (
@@ -38,6 +39,8 @@ export default function Home() {
     <Avatar type="img" width={70} height={70}/>
     <Avatar type="icon" width={70} height={70} icon={<LightningIcon width={40} height={40}/>}/>
     <IconWithText type="img" width={100} height={100}/>
+    <QuestionContent quetion="Is there a free trial available?" summary="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum debitis eaque vitae deserunt labore consequuntur veritatis incidunt blanditiis sunt magnam, vel distinctio quibusdam officiis ipsa, neque sint laborum eos optio." />
+    
     </main>
   );
 }
