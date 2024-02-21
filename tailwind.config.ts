@@ -11,6 +11,7 @@ const config: Config = {
       colors:{
         "purple-ui": "#53389e",
         "lightpurple-ui": "#7f56d9",
+        "lilac":"#f9f5ff"
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

@@ -8,7 +8,11 @@ import ArrowSquareOutIcon from "./assets/icons/ArrowSquareOutIcon";
 import ChatBubbleIcon from "./assets/icons/ChatBubbleIcon";
 import StarIcon from "./assets/icons/StarIcon";
 import InputEmail from "./components/input/email/InputEmail";
-import ArrowIcons from "./ArrowIcon";
+import Pill from "./components/pills/Pill";
+import Link from "./components/link/Link";
+import Avatar from "./components/avatar/Avatar";
+import IconWithText from "./components/inconWithText/IconWithText";
+import { sources } from "next/dist/compiled/webpack/webpack";
 
 export default function Home() {
   return (
@@ -29,7 +33,11 @@ export default function Home() {
       <a>Holaaa</a>
       <button>Holaaa</button>
       <InputEmail />
-      <ArrowIcons />
+    <Pill />
+    <Link />
+    <Avatar type="img" width={70} height={70}/>
+    <Avatar type="icon" width={70} height={70} icon={<LightningIcon width={40} height={40}/>}/>
+    <IconWithText type="img" width={100} height={100}/>
     </main>
   );
 }
