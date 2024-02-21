@@ -1,4 +1,11 @@
 import Image from "next/image";
+import QuestionIcon from "./assets/icons/QuestionIcon";
+import ArrowIcon from "./assets/icons/ArrowIcon";
+import PlusCircleIcon from "./assets/icons/PlusCircleIcon";
+import MinusCircleIcon from "./assets/icons/MinusCircleIcon";
+import LightningIcon from "./assets/icons/LightningIcon";
+import ArrowSquareOutIcon from "./assets/icons/ArrowSquareOutIcon";
+import ChatBubbleIcon from "./assets/icons/ChatBubbleIcon";
 
 export default function Home() {
   return (
@@ -8,6 +15,13 @@ export default function Home() {
       <h3>H3 Lorem ipsum dolor sit amet con </h3>
       <h6>H6 Lorem ipsum dolor sit amet con </h6>
       <p>P Lorem ipsum dolor sit amet con </p>
+      <QuestionIcon />
+      <ArrowIcon />
+      <PlusCircleIcon />
+      <MinusCircleIcon /> 
+      <ChatBubbleIcon />
+      <LightningIcon />
+      <ArrowSquareOutIcon /> 
     </main>
   );
 }
