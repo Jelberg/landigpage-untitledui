@@ -49,7 +49,7 @@ export default function Home() {
     <section className="flex flex-col items-center text-center p-5 gap-5 my-10">
       <Pill text="Integrations"/>
       <h2>Get more value from your tools</h2>
-      <p className="text-xl text-gray-500 align-center max-w-[50%]">Connect your tools, connect your teams. With over 100 app already avaliable in our directory, your teams favourite tools are just a click away.</p>
+      <p className="text-xl text-gray-500 align-center md:max-w-[60%]">Connect your tools, connect your teams. With over 100 app already avaliable in our directory, your teams favourite tools are just a click away.</p>
       <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-3">
         <IconWithTextList data={tools}/>
       </div>
@@ -76,7 +76,7 @@ export default function Home() {
     <section className="flex flex-col items-center px-1 py-20 gap-7 text-center">
       <Pill text="Features"/>
       <h2>Cutting-edge features for advance analytics</h2>
-      <p className="text-xl text-gray-500 max-w-[60%]"> Poweful, self-serve product and growth analytics to help you convert, engage, and retain more useres. Trusted by over 4,000 startups</p>
+      <p className="text-xl text-gray-500 md:max-w-[60%]"> Poweful, self-serve product and growth analytics to help you convert, engage, and retain more useres. Trusted by over 4,000 startups</p>
       <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-3" >
         <IconWithTextList data={features}/>
       </div>
