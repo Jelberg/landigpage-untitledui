@@ -16,14 +16,14 @@ Landing page created based on shared design through Figma.
 
 ## Screenshots
 
-![Section 1](assets/assets/section-1.png)
-![Section 2](assets/assets/section-2.png)
-![Section 3](assets/assets/section-3.png)
-![Section 4](assets/assets/section-4.png)
-![Section 5](assets/assets/section-5.png)
-![Section 6](assets/assets/section-6.png)
-![Section 7](assets/assets/section-7.png)
-![Footer](assets/assets/Footer.png)
+![Section 1](assets/section-1.png)
+![Section 2](assets/section-2.png)
+![Section 3](assets/section-3.png)
+![Section 4](assets/section-4.png)
+![Section 5](assets/section-5.png)
+![Section 6](assets/section-6.png)
+![Section 7](assets/section-7.png)
+![Footer](assets/Footer.png)
 
 ## Installation and Execution
 
