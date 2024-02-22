@@ -1,4 +1,4 @@
-export default function StarIcon({color="#000000",
+export default function StarIcon({color="#eeab29",
   width=20,
   height=20
 }){
