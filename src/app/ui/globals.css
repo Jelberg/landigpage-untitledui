@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base{
+  h1{
+    @apply text-6xl font-bold;
+  }
+  h2{
+    @apply text-4xl font-bold;
+  }
+  h3{
+    @apply text-3xl font-bold;
+  }
+  h6{
+    @apply text-xl font-bold;
+  }
+  a{
+    @apply text-purple-ui font-bold hover:bg-slate-200 rounded-lg px-3 py-1
+  }
+}
+
+@layer base {
+  button {
+    @apply text-white font-bold bg-lightpurple-ui rounded-lg px-5 py-3 hover:bg-purple-ui
+  }
+}
+
+body {
+  background: '#ffffff';
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
