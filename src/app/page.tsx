@@ -22,7 +22,7 @@ import {data as question} from "./mocks/question"
 
 export default function Home() {
   return (
-    <div className="flex flex-col items-center px-1 sm:px-24 md:px-24">
+    <div className="flex flex-col items-center px-1 sm:px-20 md:px-20">
      <Header />
      {/*Main section */}
      <main className="flex flex-col justify-center items-center w-full">
