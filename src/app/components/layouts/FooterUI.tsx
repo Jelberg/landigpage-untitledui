@@ -18,7 +18,6 @@ export default function FooterUI() {
 
     <nav className="col-start-2 col-span-1">
         <p className="font-bold mx-3">Company</p>
-        <p className="font-bold mx-3">Company</p>
         <ul className="list-none py-2">
             <li className="mb-2"><a className="" href="#">About us</a></li>
             <li className="mb-2"><a className="" href="#">Careers</a></li>

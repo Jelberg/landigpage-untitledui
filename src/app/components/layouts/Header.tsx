@@ -1,7 +1,7 @@
 import Image from "next/image"
 
 export default function Header() {
-    return <div className="grid grid-cols-3 place-content-between bg-white w-full">
+    return <div className="grid grid-cols-3 place-content-evenly bg-white w-full">
         <div className="flex items-center">
         <Image src="/logo/untitledui.png" alt="untitlrd-ui" width={0} height={0} sizes="100vw" style={{height:"60px", width:"auto"}}/>
         <h3 className="inline-block align-middle">Untitled UI</h3>
