@@ -21,5 +21,15 @@ export const data = ():IQuestionItem[] =>{
     "question": "Can other info be added to an invoice?",
     "summary": "Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet",
     "active": false
+},
+{
+    "question": "How does billing work?",
+    "summary": "Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet",
+    "active": false
+},
+{
+    "question": "How do i change my account email?",
+    "summary": "Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet",
+    "active": false
 }]
 }

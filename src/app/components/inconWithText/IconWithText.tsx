@@ -28,7 +28,7 @@ export default function IconWithText ({
     text = "Lorem ipsum dolor sit amet, consectetur adip",
     textLink = "View"
 }: IIconWithText){
-    return <article className="flex flex-col items-center text-center m-5">
+    return <article className="flex flex-col items-center text-center m-5 px-10 max-w-[450px]">
         <Avatar type={type} src={src} alt={alt} width={width} height={height} icon={icon}/>
         <h6 className="m-4">{title}</h6>
         <p>{text}</p>

@@ -22,6 +22,7 @@ import IconWithTextList from "./components/question/list/IconWithTextList";
 import {data as question} from "./mocks/question"
 import {data as tools} from "./mocks/tools"
 import {data as features} from "./mocks/feature"
+import {data as collage} from "./mocks/collage"
 
 export default function Home() {
   return (
@@ -45,10 +46,10 @@ export default function Home() {
      <Image className="drop-shadow-md w-auto h-auto -mt-20" alt="initial" src="/img/users-over-time.png" width={0} height={0} sizes="100vw"  />
     </main>
     {/*Section 2 : integrations*/}
-    <section className="flex flex-col items-center text-center p-5 gap-5">
+    <section className="flex flex-col items-center text-center p-5 gap-5 my-10">
       <Pill text="Integrations"/>
       <h2>Get more value from your tools</h2>
-      <p className="text-xl text-gray-500 align-center">Connect your tools, connect your teams. With over 100 app already avaliable in our directory, your teams favourite tools are just a click away.</p>
+      <p className="text-xl text-gray-500 align-center max-w-[50%]">Connect your tools, connect your teams. With over 100 app already avaliable in our directory, your teams favourite tools are just a click away.</p>
       <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-3">
         <IconWithTextList data={tools}/>
       </div>
@@ -66,16 +67,16 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="col-span-2">
-        <Image alt="" src="/img/group/5.png" width={0} height={0} sizes="100vw" style={{width:"100%", height:"auto"}}/>
-        </div>
+  
+        <Image className="col-span-2 rounded-b-2xl sm:rounded-r-2xl md:rounded-r-2xl w-full h-full" alt="" src="/img/group/5.png" width={0} height={0} sizes="100vw" />
+        
     </section>
 
     {/* Section 4: Features*/}
-    <section className="flex flex-col items-center px-1 py-10 gap-7 text-center">
+    <section className="flex flex-col items-center px-1 py-20 gap-7 text-center">
       <Pill text="Features"/>
       <h2>Cutting-edge features for advance analytics</h2>
-      <p className="text-xl text-gray-500"> Poweful, self-serve product and growth analytics to help you convert, engage, and retain more useres. Trusted by over 4,000 startups</p>
+      <p className="text-xl text-gray-500 max-w-[60%]"> Poweful, self-serve product and growth analytics to help you convert, engage, and retain more useres. Trusted by over 4,000 startups</p>
       <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-3" >
         <IconWithTextList data={features}/>
       </div>
@@ -93,7 +94,7 @@ export default function Home() {
             </div>
       </div>
       <div>
-        <Collage />
+        <Collage images={collage}/>
       </div>
     </section>
     {/** Section 6: Fequently asked */}
@@ -106,9 +107,9 @@ export default function Home() {
     </section>
      {/* Section 7: Renee Welles*/}
      <section className="bg-purple-ui grid grid-cols-1 sm:grid-cols-5 md:grid-cols-5 rounded-2xl shadow-xl items-center mx-4">
-     <div className="col-span-1 sm:col-span-2 md:col-span-2">
-        <Image alt="" src="/img/renee-wells.png" width={0} height={0} sizes="100vw" style={{width:"100%", height:"auto"}}/>
-        </div>
+
+        <Image className="col-span-1 sm:col-span-2 md:col-span-2 w-full h-full rounded-t-2xl sm:rounded-l-2xl md:rounded-l-2xl" alt="" src="/img/renee-wells.png" width={0} height={0} sizes="100vw" />
+      
         <div className="sm:col-start-3 sm:col-span-3 py-20 px-3 sm:py-24 sm:px-20 md:py-24 md:px-20"> 
         <div className="flex gap-2 my-5">
           <StarIcon />
