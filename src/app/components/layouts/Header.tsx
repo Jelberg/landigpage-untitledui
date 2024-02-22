@@ -19,7 +19,7 @@ export default function Header() {
         
         
         <div className="hidden sm:hidden md:flex justify-end gap-5 col-start-8 col-span-2">
-            <button className="text-gray-500 bg-transparent">Log in</button>
+            <button className="text-gray-500 bg-transparent my-5 hover:text-white">Log in</button>
             <button className="my-5">Sign up</button>
         </div>
         <div className="flex sm:flex md:hidden col-start-4 justify-self-end mx-auto">

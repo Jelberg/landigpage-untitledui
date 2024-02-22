@@ -16,44 +16,45 @@ import QuestionContent from "./components/question/content/QuestionContent";
 import Collage from "./components/collage/Collage";
 import Header from "./components/layouts/Header";
 import FooterUI from "./components/layouts/FooterUI";
-import QuestionList from "./components/question/list/QuestionLinst";
-import {data as question} from "./mocks/question"
+import QuestionList from "./components/question/list/QuestionList";
+import IconWithTextList from "./components/question/list/IconWithTextList";
 
+import {data as question} from "./mocks/question"
+import {data as tools} from "./mocks/tools"
+import {data as features} from "./mocks/feature"
 
 export default function Home() {
   return (
-    <div className="flex flex-col items-center px-1 sm:px-20 md:px-20">
+    <div className="flex flex-col sm:px-20 md:px-20">
      <Header />
      {/*Main section */}
      <main className="flex flex-col justify-center items-center w-full">
-     <section className="flex justify-center items-center flex-col align-middle rounded-2xl bg-purple-ui w-full py-52">
-        <h1 className="text-white">Grow your users.</h1>
-        <h1 className="text-lilac">Smarter.</h1>
+     <section className="flex justify-center items-center flex-col align-middle md:rounded-2xl bg-purple-ui w-full py-20 md:py-40 px-3">
+      <div className="flex flex-col gap-5 text-center align-middle ">
+        <h1 className="text-white md:text-7xl">Grow your users.</h1>
+        <h1 className="text-lilac md:text-7xl">Smarter.</h1>
         <p className="text-lilac"> Powerful, self-serve product and growth to help you convert, engage, and retain more users. Trusted by over 4,000 startups</p>
-        <div className="flex gap-5">
-          <InputEmail />
-          <button className="w-full">Get started</button>
+      </div>
+        <div className="grid grid-cols-1 md:grid-cols-4 p-5 gap-x-5">
+          <div className="col-span-1 md:col-span-3 w-full"><InputEmail /></div>
+          <button className="col-span-1 md:col-span-1 w-full">Get started</button>
+          <p className="text-white font-thin text-sm col-span-1 md:col-span-3">We care about your data in out <u>privacy policy</u></p>
         </div>
-        <p className="text-white font-thin text-sm">We care about your data in out <u>privacy policy</u></p>
+        
      </section>
-     <Image className="drop-shadow-md" alt="initial" src="/img/users-over-time.png" width={0} height={0} sizes="100vw" style={{width:"40%", height:"auto", marginTop:"-130px"}} />
+     <Image className="drop-shadow-md w-auto h-auto -mt-20" alt="initial" src="/img/users-over-time.png" width={0} height={0} sizes="100vw"  />
     </main>
     {/*Section 2 : integrations*/}
-    <section className="flex flex-col items-center p-5 gap-5">
+    <section className="flex flex-col items-center text-center p-5 gap-5">
       <Pill text="Integrations"/>
       <h2>Get more value from your tools</h2>
       <p className="text-xl text-gray-500 align-center">Connect your tools, connect your teams. With over 100 app already avaliable in our directory, your teams favourite tools are just a click away.</p>
       <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-3">
-        <IconWithText type="img" width={60} height={60} />
-        <IconWithText type="img" width={60} height={60} src="/imgTools/slack.png" title="Slack integration" />
-        <IconWithText type="img" width={60} height={60} src="/imgTools/drive.png" title="Google Drive integration"/>
-        <IconWithText type="img" width={60} height={60} src="/imgTools/intercom.png" title="Intercom integration"/>
-        <IconWithText type="img" width={60} height={60} src="/imgTools/jira.png" title="Jira integration"/>
-        <IconWithText type="img" width={60} height={60} src="/imgTools/dropbox.png" title="Dropbox integration"/>
+        <IconWithTextList data={tools}/>
       </div>
     </section>
     {/** Section 3: give us a shot */}
-    <section className="bg-purple-ui grid grid-cols-1 sm:grid-cols-5 rounded-2xl shadow-xl items-center">
+    <section className="bg-purple-ui grid grid-cols-1 sm:grid-cols-5 rounded-2xl mx-4 shadow-xl items-center">
     
         <div className="col-start-1 col-span-3 py-20 px-3 sm:py-24 sm:px-20 md:py-24 md:px-20"> 
           <div className="grid gap-5">
@@ -69,17 +70,17 @@ export default function Home() {
         <Image alt="" src="/img/group/5.png" width={0} height={0} sizes="100vw" style={{width:"100%", height:"auto"}}/>
         </div>
     </section>
+
     {/* Section 4: Features*/}
-    <section className="flex flex-col items-center px-1 py-10 gap-7">
+    <section className="flex flex-col items-center px-1 py-10 gap-7 text-center">
       <Pill text="Features"/>
       <h2>Cutting-edge features for advance analytics</h2>
       <p className="text-xl text-gray-500"> Poweful, self-serve product and growth analytics to help you convert, engage, and retain more useres. Trusted by over 4,000 startups</p>
       <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-3" >
-        <IconWithText type="icon" width={50} height={50} title="Share team inboxes" textLink="Learn more" icon={<ChatBubbleIcon />}/>
-        <IconWithText type="icon" width={50} height={50} title="Deliver instant answers" textLink="Learn more" icon={<LightningIcon />}/>
-        <IconWithText type="icon" width={50} height={50} title="Manage your team with reports" textLink="Learn more" icon={<ArrowSquareOutIcon />}/>
+        <IconWithTextList data={features}/>
       </div>
     </section>
+    
     {/* Section 5: Free trial*/}
     <section className="grid grid-cols-1 items-center sm:grid-cols-2 md:grid-cols-2 sm:px-20 md:px-20 px-1 bg-gray-50 w-full py-5">
       <div className="flex flex-col gap-5">
@@ -96,15 +97,15 @@ export default function Home() {
       </div>
     </section>
     {/** Section 6: Fequently asked */}
-    <section className="flex flex-col items-center py-5 sm:py-20 md:py-20 gap-5">
-      <h2>Frequently asked questions</h2>
-      <p className="text-xl text-gray-500">Everything you need to know about the product and billing.</p>
-      <div className="w-full my-5">
+    <section className="flex flex-col items-center py-10 sm:py-20 md:py-20 gap-5 mx-4 align-middle">
+      <h2 className="text-center">Frequently asked questions</h2>
+      <p className="text-xl text-gray-500 text-center">Everything you need to know about the product and billing.</p>
+      <div className="w-full md:w-[70%] my-5">
       <QuestionList data={question} />
       </div>
     </section>
      {/* Section 7: Renee Welles*/}
-     <section className="bg-purple-ui grid grid-cols-1 sm:grid-cols-5 md:grid-cols-5 rounded-2xl shadow-xl items-center">
+     <section className="bg-purple-ui grid grid-cols-1 sm:grid-cols-5 md:grid-cols-5 rounded-2xl shadow-xl items-center mx-4">
      <div className="col-span-1 sm:col-span-2 md:col-span-2">
         <Image alt="" src="/img/renee-wells.png" width={0} height={0} sizes="100vw" style={{width:"100%", height:"auto"}}/>
         </div>
@@ -117,7 +118,7 @@ export default function Home() {
           <StarIcon />
         </div>
           <div className="grid gap-3">
-            <p className="text-white text-6xl">Love the simplicity of the service and the promt customet support. We cant imagine working witout it.</p>
+            <p className="text-white text-2xl md:text-6xl">Love the simplicity of the service and the promt customet support. We cant imagine working witout it.</p>
           
             <p className="text-white text-xl font-bold mt-10">— Renee Wells</p>
             <p className="text-white"> Product Designer, Quotient</p>

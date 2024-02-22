@@ -43,7 +43,7 @@ export default function FooterUI() {
     </div>
 
 
-    <div className="grid grid-cols-1 sm:grid-cols-1 sm:col-span-1 md:grid-cols-5 md:col-span-5 items-center border-gray-100 my-5 border-t">
+    <div className="grid grid-cols-1 sm:grid-cols-1 sm:col-span-1 md:grid-cols-6 md:col-span-6 items-center border-gray-100 my-5 border-t">
      <div className="col-start-1 md:col-span-2 flex items-center ">
         <Image src="/logo/untitledui.png" alt="untitlrd-ui" width={0} height={0} sizes="100vw" style={{height:"60px", width:"auto"}}/>
         <h3 className="inline-block align-middle">Untitled UI</h3>

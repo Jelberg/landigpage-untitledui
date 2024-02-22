@@ -19,6 +19,9 @@
   a{
     @apply text-purple-ui font-bold hover:bg-slate-200 rounded-lg px-3 py-1
   }
+  section{
+    @apply py-0
+  }
 }
 
 @layer base {

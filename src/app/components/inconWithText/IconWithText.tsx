@@ -5,10 +5,10 @@ import Link from "../link/Link"
 import Avatar from "../avatar/Avatar"
 import { ReactNode } from "react"
 
-interface IIconWithText {
+export interface IIconWithText {
     src?: string,
-    width: number,
-    height: number,
+    width?: number,
+    height?: number,
     icon?: ReactNode,
     alt?: string,
     type: "img" | "icon",
@@ -19,8 +19,8 @@ interface IIconWithText {
 
 export default function IconWithText ({
     src,
-    width,
-    height,
+    width=30,
+    height=30,
     type = "img",
     icon,
     alt = "notion",

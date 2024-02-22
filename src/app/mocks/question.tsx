@@ -1,5 +1,5 @@
 'use client'
-import { IQuestionItem } from "../components/question/list/QuestionLinst"
+import { IQuestionItem } from "../components/question/list/QuestionList"
 
 export const data = ():IQuestionItem[] =>{
     return [{
