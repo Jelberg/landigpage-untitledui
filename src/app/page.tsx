@@ -18,6 +18,7 @@ import Header from "./components/layouts/Header";
 import FooterUI from "./components/layouts/FooterUI";
 import QuestionList from "./components/question/list/QuestionList";
 import IconWithTextList from "./components/question/list/IconWithTextList";
+import Card from "./components/card/Card";
 
 import {data as question} from "./mocks/question"
 import {data as tools} from "./mocks/tools"
@@ -25,6 +26,7 @@ import {data as features} from "./mocks/feature"
 import {data as collage} from "./mocks/collage"
 
 export default function Home() {
+
   return (
     <div className="flex flex-col sm:px-20 md:px-20">
      <Header />
@@ -55,21 +57,17 @@ export default function Home() {
       </div>
     </section>
     {/** Section 3: give us a shot */}
-    <section className="bg-purple-ui grid grid-cols-1 sm:grid-cols-5 rounded-2xl mx-4 shadow-xl items-center">
-    
-        <div className="col-start-1 col-span-3 py-20 px-3 sm:py-24 sm:px-20 md:py-24 md:px-20"> 
+    <section>
+        <Card coverRight="/img/group/5.png">
           <div className="grid gap-5">
-            <h2 className="text-white">Give us a shot</h2>
-            <p className="text-white text-xl font-thin">Join over 4,000+ startups already growing with Untitled</p>
-            <div className="flex flex-col-reverse gap-5 mt-5 sm:flex-row md:flex-row py-5">
-              <button className="text-black bg-white hover:text-white">Learn more</button>
-              <button> Get started</button>
+              <h2 className="text-white">Give us a shot</h2>
+              <p className="text-white text-xl font-thin">Join over 4,000+ startups already growing with Untitled</p>
+              <div className="flex flex-col-reverse gap-5 mt-5 sm:flex-row md:flex-row py-5">
+                <button className="text-black bg-white hover:text-white">Learn more</button>
+                <button> Get started</button>
+              </div>
             </div>
-          </div>
-        </div>
-  
-        <Image className="col-span-2 rounded-b-2xl sm:rounded-r-2xl md:rounded-r-2xl w-full h-full" alt="" src="/img/group/5.png" width={0} height={0} sizes="100vw" />
-        
+        </Card>
     </section>
 
     {/* Section 4: Features*/}
@@ -106,12 +104,9 @@ export default function Home() {
       </div>
     </section>
      {/* Section 7: Renee Welles*/}
-     <section className="bg-purple-ui grid grid-cols-1 sm:grid-cols-5 md:grid-cols-5 rounded-2xl shadow-xl items-center mx-4">
-
-        <Image className="col-span-1 sm:col-span-2 md:col-span-2 w-full h-full rounded-t-2xl sm:rounded-l-2xl md:rounded-l-2xl" alt="" src="/img/renee-wells.png" width={0} height={0} sizes="100vw" />
-      
-        <div className="sm:col-start-3 sm:col-span-3 py-20 px-3 sm:py-24 sm:px-20 md:py-24 md:px-20"> 
-        <div className="flex gap-2 my-5">
+     <section>
+      <Card coverLeft="/img/renee-wells.png">
+          <div className="flex gap-2 my-5">
           <StarIcon />
           <StarIcon />
           <StarIcon />
@@ -120,13 +115,12 @@ export default function Home() {
         </div>
           <div className="grid gap-3">
             <p className="text-white text-2xl md:text-6xl">Love the simplicity of the service and the promt customet support. We cant imagine working witout it.</p>
-          
             <p className="text-white text-xl font-bold mt-10">— Renee Wells</p>
             <p className="text-white"> Product Designer, Quotient</p>
-
           </div>
-        </div>
-    </section>
+      </Card>
+     </section>
+    
     <FooterUI />
     </div>
   );
